@@ -22,6 +22,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Big Shoulders Display', cursive;
   font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--color-bhb);
 }
 
 .container {
