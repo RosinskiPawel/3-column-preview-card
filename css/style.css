@@ -40,9 +40,8 @@ body {
   border-radius: 1rem;
   color: var(--color-bhb);
 }
-.sedans,
-.suvs,
-.luxury {
+
+section {
   width: auto;
   height: 33.33%;
   padding: 5rem;
@@ -130,9 +129,7 @@ body {
     border-radius: 5rem;
   }
 
-  .sedans,
-  .suvs,
-  .luxury {
+  section {
     width: 33.33%;
     height: auto;
   }
