@@ -40,13 +40,17 @@ body {
   border-radius: 1rem;
   color: var(--color-bhb);
 }
-.sedans {
+.sedans,
+.suvs,
+.luxury {
   width: auto;
   height: 33.33%;
+  padding: 5rem;
+}
+.sedans {
   background-color: var(--color-sedans);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  padding: 5rem;
 }
 
 .picture {
@@ -80,22 +84,16 @@ body {
 }
 
 .suvs {
-  width: auto;
-  height: 33.33%;
   background-color: var(--color-suvs);
-  padding: 5rem;
 }
 .button_text-suvs {
   color: var(--color-suvs);
 }
 
 .luxury {
-  width: auto;
-  height: 33.33%;
   background-color: var(--color-luxury);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 5rem;
 }
 
 .button_text-luxury {
@@ -120,7 +118,6 @@ body {
 @media only screen and (min-width: 1440px) {
   .container {
     display: flex;
-
     justify-content: center;
     text-align: left;
     min-height: 100vh;
@@ -133,18 +130,17 @@ body {
     border-radius: 5rem;
   }
 
-  .sedans {
-    width: 33.33%;
-    height: auto;
-    border-radius: 1rem 0rem 0rem 1rem;
-  }
-  .suvs {
-    width: 33.33%;
-    height: auto;
-  }
+  .sedans,
+  .suvs,
   .luxury {
     width: 33.33%;
     height: auto;
+  }
+  .sedans {
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+
+  .luxury {
     border-radius: 0rem 1rem 1rem 0rem;
   }
 
