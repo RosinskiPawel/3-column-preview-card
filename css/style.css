@@ -67,7 +67,9 @@ section {
   color: var(--color-par);
 }
 
-.button {
+.button_sedans,
+.button_suvs,
+.button_luxury {
   width: 15rem;
   height: 5rem;
   background-color: var(--color-bhb);
@@ -78,14 +80,14 @@ section {
   cursor: grab;
 }
 
-.button_text-sedans {
+.button_sedans {
   color: var(--color-sedans);
 }
 
 .suvs {
   background-color: var(--color-suvs);
 }
-.button_text-suvs {
+.button_suvs {
   color: var(--color-suvs);
 }
 
@@ -95,24 +97,22 @@ section {
   border-bottom-right-radius: 1rem;
 }
 
-.button_text-luxury {
+.button_luxury {
   color: var(--color-luxury);
 }
 
-.button:hover {
+.button_sedans:hover,
+.button_suvs:hover,
+.button_luxury:hover {
   background-color: initial;
   border-style: solid;
   border-color: var(--color-bhb);
-}
-.button_text-sedans:hover {
   color: var(--color-bhb);
 }
-.button_text-suvs:hover {
-  color: var(--color-bhb);
-}
-.button_text-luxury:hover {
-  color: var(--color-bhb);
-} /*tutaj nie wiedziałem już, jak to zgrabnie ogarnąć, aby po umieszczeniu kursora nad przyciskiem automatycznie zmieniał się kolor zarówno tła, jak i tekstu, więc zastosowałem takie obejście. Nie jest zbyt zgrabne, ale działa, chociaż tekst zmienia kolor dopiero z opóźnieniem, po dokładnym najechaniu na niego kursorem. Jak to zrobić, aby było ładnie i ekonomicznie? ;-) */
+
+/*tutaj nie wiedziałem już, jak to zgrabnie ogarnąć, aby po umieszczeniu kursora nad przyciskiem automatycznie zmieniał się kolor zarówno tła, jak i tekstu, więc zastosowałem takie obejście. Nie jest zbyt zgrabne, ale działa, chociaż tekst zmienia kolor dopiero z opóźnieniem, po dokładnym najechaniu na niego kursorem. Jak to zrobić, aby było ładnie i ekonomicznie? ;-)
+ UPDATE 18052022 Juz wiem, jak to zrobić ;>
+ */
 
 @media only screen and (min-width: 1440px) {
   .container {
@@ -141,7 +141,9 @@ section {
     border-radius: 0rem 1rem 1rem 0rem;
   }
 
-  .button {
+  .button_sedans,
+  .button_suvs,
+  .button_luxury {
     margin-top: 5rem;
   }
 }
